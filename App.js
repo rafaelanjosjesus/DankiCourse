@@ -1,29 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-
-export default class App extends React.Component{
-//exportdefault... You need put this in all your projects!
-    
+import { StyleSheet, Text, View, Image} from 'react-native';
+//Import: I need put Image in my import because i need to import my image from somewhere!
+export default class App extends React.Component{ 
     render(){ 
         return(
-            <view style = {styles.container}>
+            <view>
                 <Text>Hello world</Text>
-                <StatusBar style = "auto" />
+                <Image style = {{width:50, height:100}}
+                source = {{
+                    uri: 'https://avatars.githubusercontent.com/u/117334834?v=4'
+                }} />
             </view>
         );
     }
 }
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-})
-
-//BackgroundColor = i can use for change my background color!
-//alignItems and justifyContent = i can use for align my itens!
-//Render = all the things u put in inside of the render u can see in your app!
-//import = You use this for import your things!
+//Image style = this style that I put in my image is because I need to put some style in my image for it to load!
+//uri = is link of my image!
+//Width Height: I need put this for give width and height for my image!
