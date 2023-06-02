@@ -3,9 +3,11 @@ import {Text, View} from 'react-native';
 
 const Header = () => {
     return (
-        <text>Header Test</text>
+        <View style = {{backgroundColor: '#400c06', padding: 20}}>
+        <Text style = {{textAlign: 'center', fontSize: 30, color: 'white'}}>Header Test</Text>
+        </View>
     )
 }
 
 export default Header
-//export default Header // I can not forget the use this, if i forget the use this my code dont work!
+//<View style = {{backgroundColor: '#400c06', padding: 20}}> // In this class i learning more things  about styles i can use this link for see eveything: https://reactnative.dev/docs/stylesheet
