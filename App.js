@@ -1,20 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image} from 'react-native';
-//Import: I need put Image in my import because i need to import my image from somewhere!
+import { StyleSheet, Text, View, Image, Button} from 'react-native';
+//Import and t
 export default class App extends React.Component{ 
+   
+    Header = () => {
+        return(
+            <text>Header of my app</text>
+        );
+    }
+    Body = () => {
+        return(
+            <text>Body of my app</text>
+        );
+    }
+    Footer = () => {
+        return(
+            <text>Footer of my app</text>
+        );
+    }
     render(){ 
         return(
-            <view>
-                <Text>Hello world</Text>
-                <Image style = {{width:50, height:100}}
-                source = {{
-                    uri: 'https://avatars.githubusercontent.com/u/117334834?v=4'
-                }} />
+           <view style = {{marginTop: 20}}> 
+                <this.Header></this.Header>
+                <this.Body></this.Body>
+                <this.Footer></this.Footer>
+                <Button></Button>
             </view>
         );
     }
 }
-//Image style = this style that I put in my image is because I need to put some style in my image for it to load!
-//uri = is link of my image!
-//Width Height: I need put this for give width and height for my image!
+const Button = () =>{
+    return(
+        <Button title="Click"></Button>
+    );
+}
+//Const = This is variable const!
+//Button = This is a Button in my app!
+//View style = {{marginTop:20}} // This i put one marginTop in all the things is inside of this view!
