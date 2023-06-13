@@ -1,10 +1,11 @@
 import React from 'react';
 import {Text, View, Image } from 'react-native';
+import styleExternal from '../styles.js';
 
 const Footer = () => {
     return (
         <View style = {{flex:1, flexDirection: 'row', flexWrap: 'wrap', backgroundColor: '#924aff'}}>
-        <Text style ={{width:'50%', padding: 20, color: 'white', fontSize: 20}}>Diz-me com quem andas e te direi se vou contigo.. Uma coisa é certa: ninguém sai vivo dessa vida.. Toda regra tem exceção.. Diz-me com quem andas e te direi se vou contigo.. O sonho não acabou. E ainda temos pão doce, maria-mole e queijadinha..
+        <Text style ={styleExternal.fontStyle}>Diz-me com quem andas e te direi se vou contigo.. Uma coisa é certa: ninguém sai vivo dessa vida.. Toda regra tem exceção.. Diz-me com quem andas e te direi se vou contigo.. O sonho não acabou. E ainda temos pão doce, maria-mole e queijadinha..
 Na vida tudo é passageiro, menos o motorista e o cobrador…. A única mulher que andou na linha o trem pegou.. Os últimos serão os primeiros e os do meio sempre serão os do meio.. O importante é o que importa.. É hoje que eu volto amanhã..
 Mais vale um pássaro na mão do que bois voando.. Uma coisa é certa: ninguém sai vivo dessa vida.. Um é pouco, dois é bom e três é ímpar.. Agora, mais do que nunca, é a hora.. Se barba fosse respeito, bode não tinha chifre..
 Há males que vêm para o pior.. Sonhar que está comendo uma maria-mole gigante pode significar acordar sem o travesseiro!. Uma coisa é certa: ninguém sai vivo dessa vida.. Sonhar que está comendo uma maria-mole gigante pode significar acordar sem o travesseiro!. Se barba fosse respeito, bode não tinha chifre..
