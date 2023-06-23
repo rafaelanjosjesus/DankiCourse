@@ -6,14 +6,30 @@ import Footer from './Componentes/Footer.js';
 import Body from './Componentes/Body.js';
 
 export default class App extends React.Component{
-
-  render(){
-    return (
-    <ScrollView style = {{marginTop:20, flex:1}}>
-      <Header></Header>
-      <Body></Body>
-      <Footer></Footer>
-    </ScrollView>
+    render(){
+      constructor(props){
+        super(props);
+        this.showtext = true;
+        this.showbutton = true;
+      }
+      
+      return (
+      <ScrollView style = {{marginTop:20, flex:1}}>
+        {
+          (this.showtext)
+          ?
+          <Text>Text</Text>
+          :
+          <View></View>
+        }
+        {
+          (this.showbutton)
+          ?
+          <Button title = "Button"></Button>
+          :
+          <View></View>
+        }
+      </ScrollView>
   );
  }
 }
